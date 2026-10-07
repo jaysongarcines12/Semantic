@@ -1,0 +1,147 @@
+/* Reset and box model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1f4a30;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* Header */
+header {
+  background-color: #1f4a30;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #153322;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  padding: 14px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #c79a55;
+  color: #153322;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+main {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 2px solid #c79a55;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Sections and articles */
+section {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section article {
+  border-left: 4px solid #c79a55;
+  padding-left: 12px;
+  margin-bottom: 14px;
+}
+
+/* Lists */
+aside ul,
+.officer-list {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+aside li {
+  margin-bottom: 6px;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #153322;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin-bottom: 4px;
+}
+
+/* Small screens */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+}
